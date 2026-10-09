@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center; font-family: Arial, sans-serif; color: #ff6b6b;">Bộ Sưu Tập Món Ăn</h1>
+    <div id="image">Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.</div>
+
+    <div class="food-container">
+        <img 
+            class="preview" 
+            alt="Bánh Pizza Ý nóng hổi" 
+            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" 
+            onmouseover="update(this)" 
+            onmouseout="undo()"
+        >
+        <img 
+            class="preview" 
+            alt="Món Burger bò phô mai" 
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" 
+            onmouseover="update(this)" 
+            onmouseout="undo()"
+        >
+        <img 
+            class="preview" 
+            alt="Mì Ý Spaghetti sốt cà chua" 
+            src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=600" 
+            onmouseover="update(this)" 
+            onmouseout="undo()"
+        >
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
